@@ -175,7 +175,6 @@ input[type="checkbox"] {
   border: none;
   outline: none;
   background-color: inherit;
-  
 }
 
 #active:checked ~ .wrapper ul li a {
