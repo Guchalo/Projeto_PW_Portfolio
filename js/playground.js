@@ -28,7 +28,7 @@ function calculate(e) {
   if (exp_result == undefined) {
     result.innerHTML = "O resultado é = 0";
   } else {
-    result.innerHTML = "O resultado é =" + exp_result;
+    result.innerHTML = "O resultado é = " + exp_result;
   }
 }
 
