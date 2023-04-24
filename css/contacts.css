@@ -67,6 +67,7 @@ footer {
   border-bottom: 2px solid #ffffff;
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 .menu-btn:hover {
   border: 2px solid #191970;
   transition: ease-in-out 0.5s;
@@ -150,21 +151,28 @@ input[type="checkbox"] {
 .content {
   box-shadow: inset 0px 0px;
   position: absolute;
+  display: flex;
+  background-color: #000000b9;
   top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -30%);
   z-index: -1;
   text-align: center;
-  width: 100%;
+  height: 90%;
+  width: 90%;
   color: white;
+  border-radius: 2%;
 }
-.content .title {
-  font-size: 60px;
-  font-weight: 700;
+.content > img {
+  height: 170px;
+  width: 170px;
+  border: 5px solid #00000082;
+  border-radius: 20%;
 }
-.content p {
-  font-size: 40px;
-  font-weight: 600;
+.content > article {
+  font-size: 20px;
+  border: 10px solid #00000000;
+ 
 }
 
 #active:checked ~ .wrapper ul li a {
