@@ -26,13 +26,99 @@ function calculate(e) {
   var result = document.getElementById("result");
   var exp_result = eval(exp);
   if (exp_result == undefined) {
-    result.innerHTML = "O resultado é = 0";
+    result.innerHTML = "Resultado: 0";
   } else {
-    result.innerHTML = "O resultado é = " + exp_result;
+    result.innerHTML = "Resultado: " + exp_result;
   }
 }
 
 function clearExp(e) {
   document.getElementById("exp").value = "";
-  document.getElementById("result").innerHTML = "O resultado é = 0";
+  document.getElementById("result").innerHTML = "Resultado: 0";
+}
+
+function showName(e) {
+  var nome = document.getElementById("nome").value;
+  var label1 = document.getElementById("nome1");
+  var label2 = document.getElementById("nome2");
+  var label3 = document.getElementById("nome3");
+
+  if (nome == "" || nome == undefined) {
+    label1.innerHTML = "😠";
+    label2.innerHTML = "Vá agora a sério, insira um nome";
+    label3.innerHTML = "😠";
+  } else {
+    label1.innerHTML = nome;
+    label2.innerHTML = nome;
+    label3.innerHTML = nome;
+  }
+}
+
+function forLabel1(e) {
+  var label1 = document.getElementById("nome1");
+  var label2 = document.getElementById("nome2");
+  var label3 = document.getElementById("nome3");
+  var label4 = document.getElementById("nome4");
+
+  if (label2.innerHTML == "🦔") {
+    label1.innerHTML = "🦔";
+    label2.innerHTML = "";
+  } else if (label1.innerHTML == "🦔") {
+    label1.innerHTML = "";
+    label3.innerHTML = "🦔";
+  } else if (label3.innerHTML == "🦔") {
+    label4.innerHTML = "🦔";
+    label3.innerHTML = "";
+  }
+}
+
+function forLabel2(e) {
+  var label1 = document.getElementById("nome1");
+  var label2 = document.getElementById("nome2");
+  var label3 = document.getElementById("nome3");
+  var label4 = document.getElementById("nome4");
+
+  if (label4.innerHTML == "🦔") {
+    label4.innerHTML = "";
+    label1.innerHTML = "🎉";
+    label3.innerHTML = "🎉";
+    label2.innerHTML = "PARABÉNS POR TER CAPTURADO O OURIÇO";
+  }
+}
+
+function clearOurico(e) {
+  var label1 = document.getElementById("nome1");
+  var label2 = document.getElementById("nome2");
+  var label3 = document.getElementById("nome3");
+  var label4 = document.getElementById("nome4");
+  document.getElementById("nome").value = "";
+  label1.innerHTML = "";
+  label2.innerHTML = "🦔";
+  label3.innerHTML = "";
+  label4.innerHTML = "";
+}
+
+function dataAtual(e) {
+  const today = new Date();
+  monName = new Array(
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro"
+  );
+  var labelData = document.getElementById("dataAtual");
+  labelData.innerHTML =
+    today.getDay() +
+    " de " +
+    monName[today.getMonth()] +
+    ", " +
+    today.getFullYear();
 }
