@@ -152,6 +152,7 @@ input[type="checkbox"] {
   box-shadow: inset 0px 0px;
   position: absolute;
   display: flex;
+  flex-direction: column;
   background-color: #000000b9;
   top: 30%;
   left: 50%;
@@ -163,16 +164,42 @@ input[type="checkbox"] {
   color: white;
   border-radius: 2%;
 }
-.content > img {
-  height: 170px;
-  width: 170px;
-  border: 5px solid #00000082;
-  border-radius: 20%;
-}
 .content > article {
+  display: flex;
   font-size: 20px;
   border: 10px solid #00000000;
- 
+  overflow-x: scroll;
+  padding: 24px;
+  width: 90%;
+  height: 90%;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 24px;
+  border-radius: 8px;
+  gap: 12px;
+  margin: 2rem auto;
+}
+
+.content > article .item{
+flex: 0 0 45%;
+padding: 24px;
+border-radius: 8px;
+scroll-snap-align: start;
+}
+
+#item1{
+  background-color: #fff;
+}
+#item2{
+  background-color: #ff0000;
+}
+#item3{
+  background-color: #0800ff;
+}
+#item4{
+  background-color: #00ff2f;
+}
+#item5{
+  background-color: #ff00d4;
 }
 
 #active:checked ~ .wrapper ul li a {

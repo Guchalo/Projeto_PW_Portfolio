@@ -36,6 +36,7 @@
     </div>
     <div class="content" id="content">
       <div class="title" id="title">JavaScript Playground</div>
+      <label for="nome" id="nome6" onmouseover="forLabel1(this)"></label>
       <article>
         <button>
           <i
@@ -53,7 +54,7 @@
         <br /><br />
         <input
           type="text"
-          placeholder="Insira uma expressao"
+          placeholder="Insira uma expressão"
           name="expressao"
           id="exp"
         />
@@ -69,6 +70,7 @@
           name="nome"
           id="nome"
         />
+        <label for="nome" id="nome5" onmouseover="forLabel1(this)"></label>
         <button onclick="showName(this)">Submit</button>
         <button onclick="clearOurico(this)">🦔</button>
 
@@ -82,7 +84,9 @@
         <br /><br />
         <label for="nome" id="nome4" onmouseout="forLabel2(this)"> </label>
         <br /><br />
-        <label for="dataAual" onclick="dataAtual(this)">Clique para ver a data de hoje</label>
+        <label class="labelData" for="dataAual" onclick="dataAtual(this)"
+          >Clique para ver a data de hoje</label
+        >
         <br /><br />
         <br /><br />
         <br /><br />

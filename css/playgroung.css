@@ -190,7 +190,13 @@ input[type="checkbox"] {
   transition-delay: 0.6s;
   transform: translateX(-100px);
 }
-.nomes{
+.nomes {
   display: flex;
   justify-content: space-around;
+}
+.labelData {
+  cursor: pointer;
+}
+.content > article > button {
+  cursor: pointer;
 }

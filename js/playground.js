@@ -26,7 +26,7 @@ function calculate(e) {
   var result = document.getElementById("result");
   var exp_result = eval(exp);
   if (exp_result == undefined) {
-    result.innerHTML = "Resultado: 0";
+    result.innerHTML = "Estava á espera do que?";
   } else {
     result.innerHTML = "Resultado: " + exp_result;
   }
@@ -59,6 +59,8 @@ function forLabel1(e) {
   var label2 = document.getElementById("nome2");
   var label3 = document.getElementById("nome3");
   var label4 = document.getElementById("nome4");
+  var label5 = document.getElementById("nome5");
+  var label6 = document.getElementById("nome6");
 
   if (label2.innerHTML == "🦔") {
     label1.innerHTML = "🦔";
@@ -67,8 +69,14 @@ function forLabel1(e) {
     label1.innerHTML = "";
     label3.innerHTML = "🦔";
   } else if (label3.innerHTML == "🦔") {
-    label4.innerHTML = "🦔";
+    label5.innerHTML = "🦔";
     label3.innerHTML = "";
+  } else if (label5.innerHTML == "🦔") {
+    label6.innerHTML = "🦔";
+    label5.innerHTML = "";
+  } else if (label6.innerHTML == "🦔") {
+    label4.innerHTML = "🦔";
+    label6.innerHTML = "";
   }
 }
 
@@ -82,7 +90,7 @@ function forLabel2(e) {
     label4.innerHTML = "";
     label1.innerHTML = "🎉";
     label3.innerHTML = "🎉";
-    label2.innerHTML = "PARABÉNS POR TER CAPTURADO O OURIÇO";
+    label2.innerHTML = "PARABÉNS, CONSEGUIU CAPTURAR O OURIÇO!!";
   }
 }
 
