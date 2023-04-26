@@ -179,28 +179,30 @@ input[type="checkbox"] {
   margin: 2rem auto;
 }
 
+
+.title {
+  padding: 20px 20px 0px 20px;
+  }
+
 .content > article .item{
 flex: 0 0 45%;
 padding: 24px;
+font-size: 16px;
 border-radius: 8px;
+text-align: start;
 scroll-snap-align: start;
+background-color: #1e1a1ab9;
 }
 
-#item1{
-  background-color: #fff;
-}
-#item2{
-  background-color: #ff0000;
-}
-#item3{
-  background-color: #0800ff;
-}
-#item4{
-  background-color: #00ff2f;
-}
-#item5{
-  background-color: #ff00d4;
-}
+.content > article .item > img{
+  position: relative;
+  width: 125px;
+  height: 125px;
+  }
+
+  .headerCard{
+    text-align: center;
+  }
 
 #active:checked ~ .wrapper ul li a {
   opacity: 1;

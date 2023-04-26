@@ -152,6 +152,8 @@ input[type="checkbox"] {
   box-shadow: inset 0px 0px;
   position: absolute;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #000000b9;
   top: 30%;
   left: 50%;
@@ -163,16 +165,24 @@ input[type="checkbox"] {
   color: white;
   border-radius: 2%;
 }
-.content > img {
-  height: 170px;
-  width: 170px;
-  border: 5px solid #00000082;
-  border-radius: 20%;
-}
+
 .content > article {
   font-size: 20px;
   border: 10px solid #00000000;
  
+}
+.title {
+padding: 20px 20px 0px 20px;
+}
+
+.table,th,td{
+  border: 2px solid #ffffff;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.table > th{
+  padding: 100px;
 }
 
 #active:checked ~ .wrapper ul li a {

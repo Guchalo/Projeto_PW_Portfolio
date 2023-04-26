@@ -29,6 +29,10 @@ footer {
   color: white;
 }
 
+.title {
+  padding: 20px;
+  }
+
 .wrapper {
   position: fixed;
   top: 0;

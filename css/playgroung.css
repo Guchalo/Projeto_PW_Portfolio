@@ -18,6 +18,11 @@ body {
   font-size: 3em;
 }
 
+
+.title {
+  padding: 20px;
+  }
+
 footer {
   position: fixed;
   text-align: center;

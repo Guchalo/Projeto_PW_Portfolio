@@ -122,7 +122,7 @@ function dataAtual(e) {
     "Novembro",
     "Dezembro"
   );
-  var labelData = document.getElementById("dataAtual");
+  var labelData = document.getElementById("labelData");
   labelData.innerHTML =
     today.getDay() +
     " de " +
